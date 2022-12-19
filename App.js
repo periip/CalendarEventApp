@@ -1,6 +1,5 @@
 /*
-  Welcome to UtilityHuang, where you have a convenient way to organize events across your calendar all in one place. Normally in the calendar, events are organized by day,
-  so (if there is a way to see all events then Apple didn't make it clear enough for lazy people) you won't be able to see them across an extended timeframe.
+  Normally in the calendar, events are organized by day, so you won't be able to see them across an extended timeframe.
   My app fixes that problem by allowing you to see all the events from a selected timeframe, whether in the past or future. It also lets you edit, delete, create events right from the
   app, rather than pressing 20 buttons to get to the place you want to in the calendar app.
 
