@@ -1,23 +1,3 @@
-/*
-  Normally in the calendar, events are organized by day, so you won't be able to see them across an extended timeframe.
-  My app fixes that problem by allowing you to see all the events from a selected timeframe, whether in the past or future. It also lets you edit, delete, create events right from the
-  app, rather than pressing 20 buttons to get to the place you want to in the calendar app.
-
-  On to the specific functions that I'd like to clarify. 
-  -The app has a default window of the present to a year in the future's events. 
-  -The modal has a delete event button only when you are updating an event and an additional confirmation dialog in case there is a mistap.
-  -Any long text will get truncated in the items of the flatlist
-  -If the end date is the same as the start, only the start date will be displayed.
-  -If all day on an event is true, the end/start times will be replaced with "All-Day"
-  -The color of the notes text is different so it's distinguishable
-  
-  Bugs I'd like to clarify:
-  -The color of the datepicker for the window of the events for some reason has a white BG compared to the datetimepickers in the event modal which I don't why happens
-  -If you create or update an event on different days and choose turn on the all-day switch, it won't set the end day to the start day, rather it sets the times of the start day to the beginning of the day time and the end day to the end of the day time
-  -If you set the start window time to be past the end window time, nothing will appear because why would it
-  -A weird bug I don't understand is if you set the start window time too far back, none of the events will appear even though they technically are within the time frame. This doesn't happen if you set the end window time too far in the future.
-*/
-
 import React, { useEffect, useState } from "react";
 import { StyleSheet, View, Text, Dimensions, Switch, FlatList, TouchableOpacity, Modal, TextInput, Alert, SafeAreaView, TouchableWithoutFeedback, Keyboard } from "react-native";
 import * as Calendar from "expo-calendar";
